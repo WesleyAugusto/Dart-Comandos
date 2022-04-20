@@ -7,11 +7,19 @@
 class Casa {
   late String cor;
 
-  void abrirJanela(
-    int qtdJanelas,
-  ) {
+//void abrirJanela( int qtdJanelas,)
+  void abrirJanela() {
     print(" abri janela da da casa $cor");
-    print(" janelas $qtdJanelas");
+    //print(" janelas $qtdJanelas");
+  }
+
+  void abrirPorta() {
+    print(" abri porta da da casa $cor");
+  }
+
+  void abrirCasa() {
+    this.abrirJanela();
+    this.abrirPorta();
   }
 }
 
@@ -20,11 +28,13 @@ void main() {
 
   Casa minhaCasa = Casa();
   minhaCasa.cor = " amarelo ";
-  minhaCasa.abrirJanela(5);
+  minhaCasa.abrirCasa();
+  // minhaCasa.abrirJanela(5);
+  // minhaCasa.abrirPorta();
 
-  Casa minhaCasa2 = Casa();
+  /*Casa minhaCasa2 = Casa();
   minhaCasa2.cor = " vermelha ";
-  minhaCasa2.abrirJanela(3);
+  minhaCasa2.abrirJanela(3);*/
 
   print(minhaCasa.cor);
 }
