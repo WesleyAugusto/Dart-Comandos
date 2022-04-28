@@ -1,4 +1,4 @@
-//Classe
+/*Classe
 class Casa {
   //Atributos
   late String cor;
@@ -78,4 +78,4 @@ void main() {
   minhaCasa2.abrirJanela(3);*/
   
   //print( minhaCasa.cor );*/
-}
+}*/
